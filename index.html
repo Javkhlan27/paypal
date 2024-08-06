@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+      }
+      #header {
+        height: 88px;
+        width: 4000px;
+        padding: 20px 32px;
+        margin: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+      #header-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        display: flex;
+      }
+
+      .header-left-navigation {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-left-navigation-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 32px;
+      }
+
+      .header-left-navigation-item:hover {
+        cursor: pointer;
+        background-color: rgb(190, 255, 255);
+        font-weight: bold;
+      }
+
+      .header-left-navigation-item:hover .arrow {
+        transform: rotate(-135deg);
+      }
+
+      .arrow {
+        border: solid black;
+        border-width: 0px 3px 3px 0px;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.3s;
+      }
+
+      .down {
+        transform: rotate(45deg);
+      }
+
+      #header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .header-right-navigation-item {
+        height: 48px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header-right-navigation-item:hover {
+        font-weight: bold;
+        border-radius: 20px;
+        border: 1px solid blue;
+      }
+
+      #header-right-login-button {
+        border-radius: 20px;
+        background-color: white;
+        border-color: navy;
+        height: 50px;
+        width: 110px;
+        font-style: bolder;
+        font-weight: 500px;
+      }
+
+      #header-right-login-button:hover {
+        border: 1px solid lightblue;
+        cursor: pointer;
+      }
+
+      #header-right-signup-button {
+        border-radius: 20px;
+        color: white;
+        background-color: navy;
+        height: 50px;
+        width: 110px;
+        font-style: bolder;
+        font-weight: 500px;
+      }
+      #header-right-signup-button:hover {
+        border: 20px lightblue;
+        background-color: lightblue;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-left">
+        <img
+          src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg"
+          alt="logo"
+          width="36"
+          height="36"
+        />
+        <div class="header-left-navigation">
+          <div class="header-left-navigation-item">
+            <a href="https://www.paypal.com/us/home">Personal </a>
+            <i class="arrow down"></i>
+          </div>
+
+          <div class="header-left-navigation-item">
+            <a href="https://www.paypal.com/us/home">Small business </a>
+            <i class="arrow down"></i>
+          </div>
+          <div class="header-left-navigation-item">
+            <a href="https://www.paypal.com/us/home"> Enterprise </a>
+            <i class="arrow down"></i>
+          </div>
+          <div class="header-right-navigation-item">
+            <a
+              href="https://developer.paypal.com/home/?_ga=2.26928062.2049480794.1719933283-1679659313.1719933283"
+              >Developer</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="header-right">
+        <div class="header-right-navigation-item">
+          <a href="https://www.paypal.com/us/home">What's New </a>
+        </div>
+
+        <div class="header-right-navigation-item">
+          <a href="https://www.paypal.com/us/home"> Help</a>
+        </div>
+
+        <button id="header-right-login-button">Log In</button>
+        <button id="header-right-signup-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
